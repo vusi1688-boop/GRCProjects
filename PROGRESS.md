@@ -1,8 +1,8 @@
 # Portfolio Progress Tracker
 
 ## Phase 1 – GRC Portfolio 2026
-- [/] Project 01: PCI DSS Network Segmentation
-- [ ] Project 02: ISO 27001 Statement of Applicability
+- [X] Project 01: PCI DSS Network Segmentation
+- [/] Project 02: ISO 27001 Statement of Applicability
 - [ ] Project 05: Risk Acceptance Documentation
 - [ ] Project 04: GRC Control Automation (optional)
 
