@@ -171,9 +171,9 @@ This residual risk is formally evaluated as **Acceptable** within NorthPeak Reta
 
 | Role | Name | Title | Date | Signature Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Assessor** | Vusi | Lead GRC Analyst | Sept 17, 2026 | `[APPROVED]` |
-| **Security Reviewer** | Taimurijlal | Chief Information Security Officer (CISO) | Sept 17, 2026 | `[APPROVED]` |
-| **Business Owner** | Jane Doe | Director of Call Center Operations | Sept 17, 2026 | `[APPROVED]` |
+| **Assessor** | Vusi | Lead GRC Analyst | Sept 17, 2026 | APPROVED |
+| **Security Reviewer** | Taimurijlal | Chief Information Security Officer (CISO) | Sept 17, 2026 | APPROVED |
+| **Business Owner** | Jane Doe | Director of Call Center Operations | Sept 17, 2026 | APPROVED |
 
 ---
 *End of PCI DSS Scope Determination Document — NorthPeak Retail Ltd*
