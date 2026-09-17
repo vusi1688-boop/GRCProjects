@@ -156,9 +156,9 @@ This Statement of Applicability has been prepared in accordance with ISO/IEC 270
 
 | Role | Name | Date | Signature |
 | :--- | :--- | :--- | :--- |
-| **Lead GRC Assessor** | Vusi | September 17, 2026 | `[SIGNED]` |
-| **Chief Technology Officer** | Alex Mercer | September 17, 2026 | `[SIGNED]` |
-| **External Lead Auditor** | *(ISO Certification Body)* | Pending Stage 2 Audit | `[PENDING]` |
+| **Lead GRC Assessor** | Vusi | September 17, 2026 | SIGNED |
+| **Chief Technology Officer** | Alex Mercer | September 17, 2026 | SIGNED |
+| **External Lead Auditor** | *(ISO Certification Body)* | Pending Stage 2 Audit | PENDING |
 
 ---
 *End of ISO/IEC 27001:2022 Statement of Applicability — CloudNative Analytics Ltd*
