@@ -37,6 +37,10 @@ The GRC market has matured. Framework familiarity is assumed. Documentation alon
 
 ## Portfolio Projects
 
+The portfolio runs in two tracks. The GRC track builds the arguments. The **Identity Governance track** builds the ground those arguments stand on: Active Directory is the system that records who had access, so it is the system that decides whether any compliance claim is verifiable.
+
+### Track A — GRC Decision-Making
+
 | # | Project | Framework/Domain | Core Skill Demonstrated |
 |---|---------|------------------|------------------------|
 | 01 | [PCI DSS Network Segmentation Review](./01-pci-dss-network-segmentation/) | PCI DSS | Defending risk claims under audit scrutiny |
@@ -44,6 +48,47 @@ The GRC market has matured. Framework familiarity is assumed. Documentation alon
 | 03 | [EU AI Act High-Risk Assessment](./03-eu-ai-act-high-risk-assessment/) | EU AI Act | Translating regulation to operational reality |
 | 04 | [GRC Control Automation](./04-grc-control-automation/) | GRC Engineering | Bridging governance and engineering |
 | 05 | [Risk Acceptance Documentation](./05-risk-acceptance-documentation/) | Enterprise Risk | Communicating risk to business leaders |
+
+### Track B — Identity Governance in Active Directory
+
+One shared scenario, **Kopano Financial Services**, read as a single programme: draw the boundary, prove it holds, own what is left.
+
+| # | Project | Framework/Domain | Core Skill Demonstrated |
+|---|---------|------------------|------------------------|
+| 06 | [Defending a Tier 0 Boundary](./06-ad-tiered-administration/) | AD architecture, ISO 27001, PCI DSS 4.0 | Scoping privileged access and defending the boundary |
+| 07 | [Continuous Access Evidence](./07-ad-access-review-evidence/) | Audit evidence, SOC 2, PCI DSS 4.0 | Making "who had access on this date" answerable |
+| 08 | [Hardening Exceptions as Debt](./08-ad-hardening-exception-and-risk-acceptance/) | CIS Benchmarks, risk acceptance | Time-boxed, owned, priced exceptions |
+
+**Start here if you are reviewing my work:** [`IDENTITY-GOVERNANCE-BRIDGE.md`](./IDENTITY-GOVERNANCE-BRIDGE.md) — the matrix that connects every AD control to its obligation, plus the four mapping myths that make such matrices dangerous.
+
+```
+          TRACK A asks:  "Is this risk decision defensible?"
+          TRACK B asks:  "Is the evidence for it true, current, complete?"
+
+   01  Segmentation claim ─┐
+   02  SoA status claims ──┤
+   05  Risk acceptance ────┤
+                            ▼
+          ┌───────────────────────────────────┐
+          │ 06  The directory that records    │
+          │     who had access, and           │
+          │     who could change that record  │
+          └─────────────────┬─────────────────┘
+                            ▼
+          ┌───────────────────────────────────┐
+          │ 07  Evidence that survives a      │
+          │     hostile question              │
+          └─────────────────┬─────────────────┘
+                            ▼
+          ┌───────────────────────────────────┐
+          │ 08  What is left, priced and      │
+          │     expiring                      │
+          └───────────────────────────────────┘
+
+          A GRC professional who cannot explain 06-08 is asserting things
+          about a system they have not examined. That is the point of the
+          combined portfolio.
+```
 
 ---
 
@@ -95,6 +140,18 @@ The GRC market has matured. Framework familiarity is assumed. Documentation alon
 3. Customize scenarios to industries you're targeting
 4. Include your video walkthroughs in applications
 
+**Suggested combinations**
+
+| Target role | Complete | Why this pairing |
+|-------------|----------|------------------|
+| GRC Analyst / Compliance | 02, 05, 08 | Risk-driven exclusions, owned risk acceptance, time-boxed exceptions |
+| IAM / Identity Governance | 06, 07, 08 | Boundary, evidence, and honest debt in one narrative |
+| Security Engineer → GRC | 04, 06, 07 | Automation design plus the evidence it must produce |
+| Audit / Assurance | 01, 07 | Defending a claim, then proving it for any date |
+| AI Governance | 03 + 02 | Regulation translated into a scoped, defensible SoA |
+
+Do not complete all eight at a shallow level. Two projects with real measurements, a named owner, and a documented failure beat eight with diagrams.
+
 ### Project Structure (Each Folder)
 ```
 project-folder/
@@ -140,16 +197,28 @@ Your project is strong if you can answer "yes" to these questions:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/grc-portfolio-2026.git
+git clone https://github.com/vusi1688-boop/GRCProjects.git
 
 # Navigate to a project
-cd grc-portfolio-2026/01-pci-dss-network-segmentation
+cd GRCProjects/06-ad-tiered-administration
 
 # Read the project README
 # Complete the exercises
 # Document your reasoning
 # Record your walkthrough
 ```
+
+### Browsable portfolio site
+
+The whole portfolio is also presented as a static site — projects, skills matrix and evidence framing on one page, with no build step:
+
+```bash
+# From the repository root
+python3 -m http.server 8000
+# then open http://localhost:8000/site/
+```
+
+It is plain HTML, CSS and a small amount of JavaScript, so it can be hosted on GitHub Pages, Netlify or S3 without any tooling. Content is generated from `site/portfolio.js`, so edits to project descriptions happen in one place.
 
 ---
 
