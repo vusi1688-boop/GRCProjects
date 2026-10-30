@@ -87,7 +87,7 @@ If a *requirement* maps to nothing in your control set, that is a coverage gap, 
 
 ### Myth 3: "We're not in the CDE, so PCI doesn't apply"
 
-PCI DSS 4.0 scoping is about where cardholder data *flows and can be reached*, and the segmented estate still needs to prove the segmentation holds (see [Project 01](../01-pci-dss-network-segmentation/)). AD is the classic failure: a domain controller in the corporate zone that trusts a workstation in the CDE is a path, and paths count. Requirement 12.5.2.1 asks you to *confirm* scope annually — a diagram is not a confirmation.
+PCI DSS 4.0 scoping is about where cardholder data *flows and can be reached*, and the segmented estate still needs to prove the segmentation holds (see [Project 01](./01-pci-dss-network-segmentation/)). AD is the classic failure: a domain controller in the corporate zone that trusts a workstation in the CDE is a path, and paths count. Requirement 12.5.2.1 asks you to *confirm* scope annually — a diagram is not a confirmation.
 
 ### Myth 4: "The auditor signed it off, so it's fine"
 

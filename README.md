@@ -66,6 +66,7 @@ The practical track: turning a real home lab into evidence for a first-line supp
 | # | Project | Domain | Core Skill Demonstrated |
 |---|---------|--------|------------------------|
 | 09 | [Service Desk Readiness](./09-helpdesk-readiness/) | Windows Server, AD, GPO, service management | Auditing your own build honestly, working a ticket queue, converting mistakes into interview evidence |
+| 10 | [Career Strategy](./10-career-strategy/) | Career positioning, lab roadmap, certification order | Choosing a wedge, sequencing skill acquisition by employer value, honest self-assessment |
 
 **Start here if you are reviewing my work:** [`IDENTITY-GOVERNANCE-BRIDGE.md`](./IDENTITY-GOVERNANCE-BRIDGE.md) — the matrix that connects every AD control to its obligation, plus the four mapping myths that make such matrices dangerous.
 
@@ -100,7 +101,7 @@ The practical track: turning a real home lab into evidence for a first-line supp
 
 ---
 
-Track C sits underneath the other two in a different way. It is where the identity knowledge becomes a daily job: resetting a password without breaking a delegation model, disabling an account properly, and knowing which requests you must escalate. See [`09-helpdesk-readiness/`](./09-helpdesk-readiness/) for the 30-day plan, the ticket diet and the CV pack.
+Track C sits underneath the other two in a different way. It is where the identity knowledge becomes a daily job: resetting a password without breaking a delegation model, disabling an account properly, and knowing which requests you must escalate. See [`09-helpdesk-readiness/`](./09-helpdesk-readiness/) for the 30-day plan, the ticket diet and the CV pack, and [`10-career-strategy/`](./10-career-strategy/) for the CISO review, the twelve-month arc and the ordered lab roadmap.
 
 ---
 

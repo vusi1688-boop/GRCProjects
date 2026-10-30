@@ -192,10 +192,32 @@ const PORTFOLIO = {
         "30-day plan with applications starting on Day 7, not Day 30"
       ],
       deliverable: "templates/ticket-log-template.md"
+    },
+    {
+      num: "10",
+      dir: "10-career-strategy",
+      track: "career",
+      trackLabel: "Track C · Career",
+      title: "Career Strategy — A CISO's Honest Read",
+      why: "Two profiles, one wedge. Interviewers hire a sentence, not a project count.",
+      scenario:
+        "A GRC portfolio that can reason about risk, and an on-premises AD lab that can operate the machinery — built by someone with no professional IT experience, applying for first-line support in Johannesburg.",
+      decision:
+        "Stop applying for two careers. Position as an identity-minded support engineer, sequence the next twelve months behind three gates, and close the cloud gap before adding another project.",
+      evidence: [
+        "Honest profile assessment: what is hireable today, and what is not",
+        "12-month arc in three phases, each with a pass/fail gate",
+        "Certification order with the reasoning and what to skip",
+        "16-build lab roadmap ordered by employer value per hour",
+        "Five risks that sink career changers, and the mitigation for each",
+        "Weekly log the mentor reads — including the weeks that went badly"
+      ],
+      deliverable: "CISO-MENTOR-REVIEW.md"
     }
   ],
 
   resume: "resume.html",
+
 
   skills: [
     ["Privileged access scoping", "06 · Tier 0 boundary", "Tier 0 register + dependency register"],
@@ -214,7 +236,9 @@ const PORTFOLIO = {
     ["Ticket triage and prioritisation", "09", "Priority derived from impact × urgency"],
     ["Onboarding / offboarding execution", "09", "Both checklists tested on a live account"],
     ["Escalation discipline", "09", "Matrix with named limits and handoff template"],
-    ["User communication", "09", "Plain-language resolution notes and KB articles"]
+    ["User communication", "09", "Plain-language resolution notes and KB articles"],
+    ["Career sequencing", "10", "Lab roadmap ordered by employer value"],
+    ["Positioning and narrative", "10", "One wedge, one sentence, three gates"]
   ],
 
   ladder: [
@@ -350,7 +374,7 @@ function renderProjects() {
       });
       note.innerHTML =
         track === "career"
-          ? "Project 09 is the service desk track: a real lab build audited honestly, 16 worked tickets, and a 30-day plan to a first-line role."
+          ? "Projects 09–10 are the career track: an honest lab audit, 16 worked tickets, and a twelve-month plan with gates."
           : track === "identity"
           ? "Projects 06–08 share one scenario (<em>Kopano Financial Services</em>): draw the boundary, prove it held, own what is left."
           : track === "grc"

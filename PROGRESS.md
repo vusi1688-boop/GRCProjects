@@ -37,9 +37,20 @@
 - [ ] 40 applications sent (5 by Day 7, 15 by Day 14, 30 by Day 21)
 - [ ] 5-minute walkthrough recorded
 
+## Phase 5 – Career Strategy (12-month arc)
+- [ ] Positioning sentence written (one line, own words)
+- [ ] Gate 1: live password reset + delegation explanation + sign-in log, no notes
+- [ ] MS-900 booked (or SC-900 learning path completed free)
+- [ ] Cloud gap closed: Entra ID + M365 admin basics lab build
+- [ ] Two human references identified
+- [ ] Gate 2: evidence pack from a real offboarding or access review
+- [ ] Gate 3: a decision I would reverse, explained in 5 minutes
+- [ ] Weekly log maintained, honestly
+
 ## Session Log
 | Date | Project | What I Did | Next Step |
 |------|---------|------------|-----------|
 | 2026-01-15 | 01 PCI Scope | Fork & Deliverable Setup | Write Document Info & Scope Statement |
 | 2026-10-30 | 06–08 + bridge | Added identity governance track (AD × GRC), bridge matrix, portfolio site | Complete Tier 0 register measurements |
 | 2026-10-30 | 09 Service Desk | Lab build reviewed as an audit; 14 findings with fixes, 16-ticket diet, CV + interview pack, 30-day plan, print-ready CV | Fix findings 1, 2, 4 and run the DNS test |
+| 2026-10-30 | 10 Career Strategy | CISO review of both profiles, 12-month arc with three gates, certification order, 16-build lab roadmap, weekly log | Positioning sentence, then lab builds 1–3 |
