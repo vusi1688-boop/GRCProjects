@@ -151,7 +151,7 @@ State these limits rather than letting an auditor find them:
 
 | Limit | Consequence | Covered by |
 |-------|-------------|------------|
-| Cloud identity (Entra ID roles, service principals, workload identities) | AD-focused controls miss cloud-only privilege | Out of scope for 06–08; a natural Project 09 |
+| Cloud identity (Entra ID roles, service principals, workload identities) | AD-focused controls miss cloud-only privilege | Out of scope for 06–08; a natural Project 10 |
 | Non-Windows directory (LDAP-based apps, SaaS IdPs, Linux SSSD) | Identity graph incomplete | Project 07 §2 gap register |
 | Application-level RBAC inside business systems | Privileged access inside an app is invisible to AD evidence | Requires app-level evidence |
 | Physical and supply-chain access | Not identity | Project 02 SoA |

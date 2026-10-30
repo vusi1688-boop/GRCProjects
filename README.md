@@ -1,6 +1,6 @@
 # GRC Portfolio 2026: Decision-Making Under Real Constraints
 
-A practical portfolio of Governance, Risk, and Compliance projects that demonstrate **judgment, not memorization**. These projects mirror how security decisions are actually made inside organizations.
+A practical portfolio of Governance, Risk, and Compliance projects that demonstrate **judgment, not memorization** — combined with an Active Directory identity track and a service desk readiness track built from a real home lab. These projects mirror how security decisions are actually made inside organizations.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -37,7 +37,7 @@ The GRC market has matured. Framework familiarity is assumed. Documentation alon
 
 ## Portfolio Projects
 
-The portfolio runs in two tracks. The GRC track builds the arguments. The **Identity Governance track** builds the ground those arguments stand on: Active Directory is the system that records who had access, so it is the system that decides whether any compliance claim is verifiable.
+The portfolio runs in three tracks. The **GRC track** builds the arguments. The **Identity Governance track** builds the ground those arguments stand on: Active Directory is the system that records who had access, so it is the system that decides whether any compliance claim is verifiable. The **Service Desk track** is the practical route in — a real lab, audited honestly, worked as a ticket queue.
 
 ### Track A — GRC Decision-Making
 
@@ -58,6 +58,14 @@ One shared scenario, **Kopano Financial Services**, read as a single programme: 
 | 06 | [Defending a Tier 0 Boundary](./06-ad-tiered-administration/) | AD architecture, ISO 27001, PCI DSS 4.0 | Scoping privileged access and defending the boundary |
 | 07 | [Continuous Access Evidence](./07-ad-access-review-evidence/) | Audit evidence, SOC 2, PCI DSS 4.0 | Making "who had access on this date" answerable |
 | 08 | [Hardening Exceptions as Debt](./08-ad-hardening-exception-and-risk-acceptance/) | CIS Benchmarks, risk acceptance | Time-boxed, owned, priced exceptions |
+
+### Track C — Service Desk Readiness
+
+The practical track: turning a real home lab into evidence for a first-line support role, starting from **Vusi.lab** (Windows Server 2022 domain controller + Windows 11 client).
+
+| # | Project | Domain | Core Skill Demonstrated |
+|---|---------|--------|------------------------|
+| 09 | [Service Desk Readiness](./09-helpdesk-readiness/) | Windows Server, AD, GPO, service management | Auditing your own build honestly, working a ticket queue, converting mistakes into interview evidence |
 
 **Start here if you are reviewing my work:** [`IDENTITY-GOVERNANCE-BRIDGE.md`](./IDENTITY-GOVERNANCE-BRIDGE.md) — the matrix that connects every AD control to its obligation, plus the four mapping myths that make such matrices dangerous.
 
@@ -89,6 +97,10 @@ One shared scenario, **Kopano Financial Services**, read as a single programme: 
           about a system they have not examined. That is the point of the
           combined portfolio.
 ```
+
+---
+
+Track C sits underneath the other two in a different way. It is where the identity knowledge becomes a daily job: resetting a password without breaking a delegation model, disabling an account properly, and knowing which requests you must escalate. See [`09-helpdesk-readiness/`](./09-helpdesk-readiness/) for the 30-day plan, the ticket diet and the CV pack.
 
 ---
 
@@ -149,6 +161,7 @@ One shared scenario, **Kopano Financial Services**, read as a single programme: 
 | Security Engineer → GRC | 04, 06, 07 | Automation design plus the evidence it must produce |
 | Audit / Assurance | 01, 07 | Defending a claim, then proving it for any date |
 | AI Governance | 03 + 02 | Regulation translated into a scoped, defensible SoA |
+| Service desk / first line | 09 + 06 + 07 | Ticket discipline, plus why the privileged account you touch matters |
 
 Do not complete all eight at a shallow level. Two projects with real measurements, a named owner, and a documented failure beat eight with diagrams.
 
@@ -218,7 +231,7 @@ python3 -m http.server 8000
 # then open http://localhost:8000/site/
 ```
 
-It is plain HTML, CSS and a small amount of JavaScript, so it can be hosted on GitHub Pages, Netlify or S3 without any tooling. Content is generated from `site/portfolio.js`, so edits to project descriptions happen in one place.
+It is plain HTML, CSS and a small amount of JavaScript, so it can be hosted on GitHub Pages, Netlify or S3 without any tooling. Content is generated from `site/portfolio.js`, so edits to project descriptions happen in one place. There is also a print-ready CV at [`site/resume.html`](./site/resume.html) — open it and use Print → Save as PDF.
 
 ---
 

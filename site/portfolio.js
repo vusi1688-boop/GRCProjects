@@ -170,8 +170,32 @@ const PORTFOLIO = {
         "One-page debt ageing report with detection coverage"
       ],
       deliverable: "templates/ad-exception-decision-record.md"
+    },
+    {
+      num: "09",
+      dir: "09-helpdesk-readiness",
+      track: "career",
+      trackLabel: "Track C · Career",
+      title: "Service Desk Readiness — Lab to Hireable Evidence",
+      tags: ["Windows Server 2022", "Active Directory", "GPO", "Service desk"],
+      why: "A home lab proves you can build a domain. A ticket log proves you can be trusted with one.",
+      scenario:
+        "Vusi.lab: a three-day build of a Server 2022 domain controller, a Windows 11 client, departmental OUs, RBAC file shares, Group Policy, RSAT and PowerShell provisioning — and a 30-day route into a first-line support role from Johannesburg.",
+      decision:
+        "Stop describing the lab as a feature list and treat it as an environment inherited by a support analyst: audit what was built wrong, work 16 simulated tickets, and convert the mistakes into interview evidence.",
+      evidence: [
+        "14-finding lab audit with fixes, including an over-privileged Domain Admin account",
+        "16 specified tickets with expected diagnoses, root causes and metric tracking",
+        "Onboarding and offboarding checklists tested end to end",
+        "Escalation matrix with named limits and structured handoff format",
+        "CV pack with before/after bullets and a STAR story bank",
+        "30-day plan with applications starting on Day 7, not Day 30"
+      ],
+      deliverable: "templates/ticket-log-template.md"
     }
   ],
+
+  resume: "resume.html",
 
   skills: [
     ["Privileged access scoping", "06 · Tier 0 boundary", "Tier 0 register + dependency register"],
@@ -185,7 +209,12 @@ const PORTFOLIO = {
     ["Regulatory interpretation", "03", "EU AI Act assessment with a deployment decision"],
     ["Risk communication to the business", "05, 08", "Plain-language exposure and cost statements"],
     ["Control automation design", "04, 07", "Manual-vs-automated split with reasons"],
-    ["Defending a decision under challenge", "all", "Written audit response packs"]
+    ["Defending a decision under challenge", "all", "Written audit response packs"],
+    ["Structured troubleshooting", "09", "16 tickets with hypothesis + test records"],
+    ["Ticket triage and prioritisation", "09", "Priority derived from impact × urgency"],
+    ["Onboarding / offboarding execution", "09", "Both checklists tested on a live account"],
+    ["Escalation discipline", "09", "Matrix with named limits and handoff template"],
+    ["User communication", "09", "Plain-language resolution notes and KB articles"]
   ],
 
   ladder: [
@@ -320,7 +349,9 @@ function renderProjects() {
         card.hidden = track !== "all" && card.dataset.track !== track;
       });
       note.innerHTML =
-        track === "identity"
+        track === "career"
+          ? "Project 09 is the service desk track: a real lab build audited honestly, 16 worked tickets, and a 30-day plan to a first-line role."
+          : track === "identity"
           ? "Projects 06–08 share one scenario (<em>Kopano Financial Services</em>): draw the boundary, prove it held, own what is left."
           : track === "grc"
             ? "Projects 01–05 build defensible GRC decisions across five frameworks."

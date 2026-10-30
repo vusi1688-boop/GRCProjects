@@ -23,8 +23,23 @@
 - [x] Bridge document: IDENTITY-GOVERNANCE-BRIDGE.md
 - [ ] Browseable portfolio site reviewed on mobile
 
+## Phase 4 – Service Desk Readiness (30-day plan, Day 1 = 2026-10-30)
+- [ ] Lab audit: findings 1, 2, 4 fixed (over-privilege, admin account, recycle bin)
+- [ ] Lab audit: remaining findings 3, 5–14 worked
+- [ ] Ticket queue live (labels + issue template), 16 tickets created
+- [ ] 16 tickets closed with notes and metrics
+- [ ] Onboarding checklist tested on a real test account
+- [ ] Offboarding checklist tested on a real test account
+- [ ] KB-01 and KB-02 written from real tickets
+- [ ] Escalation matrix completed
+- [ ] CV v2 (verifiable bullets, 2 pages) + GitHub link working
+- [ ] 8 STAR stories written, 4 from the lab
+- [ ] 40 applications sent (5 by Day 7, 15 by Day 14, 30 by Day 21)
+- [ ] 5-minute walkthrough recorded
+
 ## Session Log
 | Date | Project | What I Did | Next Step |
 |------|---------|------------|-----------|
 | 2026-01-15 | 01 PCI Scope | Fork & Deliverable Setup | Write Document Info & Scope Statement |
 | 2026-10-30 | 06–08 + bridge | Added identity governance track (AD × GRC), bridge matrix, portfolio site | Complete Tier 0 register measurements |
+| 2026-10-30 | 09 Service Desk | Lab build reviewed as an audit; 14 findings with fixes, 16-ticket diet, CV + interview pack, 30-day plan, print-ready CV | Fix findings 1, 2, 4 and run the DNS test |

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vusi — IT Support / Service Desk Analyst</title>
+<meta name="description" content="Service desk CV backed by a documented Active Directory lab, 16 resolved tickets and a compliance portfolio." />
+<style>
+  :root {
+    --ink: #15202b;
+    --muted: #55636f;
+    --line: #d7dde3;
+    --accent: #8a5a12;
+    --bg: #ffffff;
+    --panel: #f7f8fa;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #eceef1;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    background: var(--bg);
+    max-width: 850px;
+    margin: 24px auto;
+    padding: 40px 46px 36px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.10), 0 12px 34px rgba(0,0,0,.06);
+  }
+
+  /* ---------- header ---------- */
+
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 14px; margin-bottom: 20px; }
+
+  h1 { font-size: 27px; letter-spacing: -.02em; margin: 0 0 2px; font-weight: 700; }
+
+  .role {
+    font-family: var(--mono); font-size: 12px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 10px;
+  }
+
+  .contact { font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+  .contact a { color: var(--muted); text-decoration: none; border-bottom: 1px dotted #b9c2cb; }
+  .contact span::before { content: "·"; margin-right: 10px; color: #c3cad1; }
+  .contact span:first-child::before { content: none; margin: 0; }
+
+  /* ---------- sections ---------- */
+
+  section { margin-bottom: 18px; }
+
+  h2 {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .13em; text-transform: uppercase;
+    color: var(--accent); margin: 0 0 8px; padding-bottom: 4px;
+    border-bottom: 1px solid var(--line); font-weight: 600;
+  }
+
+  p { margin: 0 0 8px; }
+  .lede { color: var(--ink); }
+  .muted { color: var(--muted); }
+  .small { font-size: 13px; }
+
+  /* ---------- skills ---------- */
+
+  .skills { display: grid; gap: 5px; font-size: 13.5px; }
+  .skill-row { display: grid; grid-template-columns: 168px 1fr; gap: 12px; }
+  .skill-row dt { font-weight: 600; color: var(--ink); }
+  .skill-row dd { margin: 0; color: var(--muted); }
+
+  /* ---------- entries ---------- */
+
+  .entry { margin-bottom: 12px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+  .entry-title { font-weight: 650; font-size: 14.5px; }
+  .entry-when { font-family: var(--mono); font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+  .entry-sub { font-size: 12.5px; color: var(--muted); margin: 1px 0 5px; }
+
+  ul { margin: 5px 0 0; padding-left: 17px; }
+  li { margin-bottom: 3px; font-size: 13.5px; color: #2b3742; }
+  li::marker { color: var(--accent); }
+
+  code {
+    font-family: var(--mono); font-size: 12px;
+    background: var(--panel); padding: 1px 4px; border-radius: 3px; color: #3c2a10;
+  }
+
+  /* ---------- evidence strip ---------- */
+
+  .evidence {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); margin-top: 4px;
+  }
+  .ev { background: var(--panel); padding: 9px 10px; }
+  .ev b { display: block; font-family: var(--mono); font-size: 17px; color: var(--ink); line-height: 1.1; }
+  .ev span { font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+  /* ---------- footer / hints ---------- */
+
+  .hint {
+    max-width: 850px; margin: 0 auto 24px; padding: 12px 16px;
+    background: #fff8e6; border: 1px solid #e6d3a3; border-radius: 6px;
+    font-size: 12.5px; color: #5c4a1d;
+  }
+  .hint strong { color: #3d300f; }
+  .hint code { background: #f3e8c8; }
+
+  .noprint { }
+  .printbar { max-width: 850px; margin: 18px auto 0; display: flex; justify-content: flex-end; gap: 8px; }
+  .printbar button {
+    font: inherit; font-size: 13px; padding: .5rem .9rem; border-radius: 8px; cursor: pointer;
+    background: var(--ink); color: #fff; border: 0;
+  }
+  .printbar a { font-size: 13px; align-self: center; color: var(--muted); }
+
+  /* ---------- print ---------- */
+
+  @page { size: A4; margin: 14mm 15mm; }
+
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    .sheet { box-shadow: none; margin: 0; padding: 0; max-width: none; }
+    .noprint { display: none !important; }
+    a { color: var(--ink); border: 0; text-decoration: none; }
+    section { break-inside: avoid; }
+    .entry { break-inside: avoid; }
+    h2 { break-after: avoid; }
+  }
+
+  @media (max-width: 700px) {
+    .sheet { padding: 26px 22px; margin: 0; }
+    .skill-row { grid-template-columns: 1fr; gap: 1px; }
+    .skill-row dd { margin-bottom: 5px; }
+    .evidence { grid-template-columns: 1fr 1fr; }
+    .entry-head { flex-direction: column; gap: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="printbar noprint">
+  <a href="./index.html">← portfolio site</a>
+  <button onclick="window.print()">Print / save as PDF</button>
+</div>
+
+<div class="hint noprint">
+  <strong>Template.</strong> Replace every <code>[bracketed]</code> item, then use Print → Save as PDF and rename it
+  <code>Vusi-[Surname]-ServiceDesk-CV.pdf</code>. Keep it to two pages. Delete this box before printing.
+</div>
+
+<main class="sheet">
+
+  <header>
+    <h1>[Vusi Surname]</h1>
+    <p class="role">IT Support · Service Desk Analyst</p>
+    <div class="contact">
+      <span>Johannesburg, Gauteng</span>
+      <span>[email@example.com]</span>
+      <span>[+27 7X XXX XXXX]</span>
+      <span><a href="https://github.com/vusi1688-boop/GRCProjects">github.com/vusi1688-boop/GRCProjects</a></span>
+      <span>[linkedin.com/in/…]</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p class="lede">
+      IT support candidate with hands-on Windows Server 2022 and Active Directory experience from a self-built
+      domain lab: domain design, departmental OUs, role-based security groups, NTFS and share permissions,
+      Group Policy, delegated administration and PowerShell provisioning. Documented 16 resolved support tickets,
+      two knowledge base articles and an honest audit of the environment's own weaknesses — including a privilege
+      mistake I found, fixed and wrote up.
+    </p>
+  </section>
+
+  <section>
+    <h2>Key skills</h2>
+    <dl class="skills">
+      <div class="skill-row"><dt>Directory &amp; identity</dt><dd>Active Directory DS, OU design, security groups, RBAC, delegated administration, password reset and unlock, account lifecycle</dd></div>
+      <div class="skill-row"><dt>Windows Server</dt><dd>Windows Server 2022, DNS (forward and reverse zones, scavenging), file services, NTFS and share permissions, system state backup</dd></div>
+      <div class="skill-row"><dt>Endpoints</dt><dd>Windows 11, domain join, RSAT (<code>Add-WindowsCapability</code>), local admin password management with LAPS</dd></div>
+      <div class="skill-row"><dt>Group Policy</dt><dd>GPO creation and linking, security filtering, drive mapping, security options, troubleshooting with <code>gpresult</code> and GPO reports</dd></div>
+      <div class="skill-row"><dt>Automation</dt><dd>PowerShell: <code>New-ADUser</code>, <code>Add-ADGroupMember</code>, CSV bulk provisioning with per-user error handling and logging</dd></div>
+      <div class="skill-row"><dt>Service management</dt><dd>Triage by impact and urgency, escalation with structured handoff, KB writing, change logging, user communication</dd></div>
+      <div class="skill-row"><dt>Governance awareness</dt><dd>Least privilege, privileged access separation, access review evidence, risk acceptance, POPIA and ISO 27001 fundamentals</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Evidence at a glance</h2>
+    <div class="evidence">
+      <div class="ev"><b>16</b><span>tickets resolved</span></div>
+      <div class="ev"><b>14</b><span>lab audit findings</span></div>
+      <div class="ev"><b>2</b><span>KB articles</span></div>
+      <div class="ev"><b>9</b><span>portfolio projects</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Active Directory Home Lab — Vusi.lab</span>
+        <span class="entry-when">2026</span>
+      </div>
+      <p class="entry-sub">Windows Server 2022 domain controller · Windows 11 Pro domain-joined client · RSAT remote administration</p>
+      <ul>
+        <li>Built a departmental OU structure (HR, IT, Finance) with role-based security groups and department shares configured with inheritance disabled and explicit ACLs; verified access and denial for each group.</li>
+        <li>Deployed Group Policy for drive mapping, logon banner, desktop standardisation and Control Panel restriction; diagnosed application failures with <code>gpresult /r</code> and GPO reports rather than reconfiguration.</li>
+        <li>Provisioned users in bulk from CSV with PowerShell, adding per-user error handling and a timestamped log after the first version silently skipped a failed account.</li>
+        <li>Audited the completed build as an inheriting support analyst: documented 14 findings and remediated the highest-risk items, replacing an over-privileged Domain Admin account with delegated, OU-scoped password-reset rights and verifying the result with <code>Get-Acl</code>.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Service Desk Simulation — 16 resolved tickets</span>
+        <span class="entry-when">2026</span>
+      </div>
+      <p class="entry-sub">Simulated queue worked against the lab environment, with a written record per ticket</p>
+      <ul>
+        <li>Covered account (reset, lockout, unlock), access (share permissions, token refresh), Group Policy, DNS resolution, printing, slow logon, workstation trust relationship, device build and security-report categories.</li>
+        <li>Recorded time to first response, time to resolution, contacts, escalation and reopen status per ticket; tracked first-hypothesis accuracy to keep troubleshooting cheap before it was expensive.</li>
+        <li>Wrote two knowledge base articles and an onboarding/offboarding checklist, each tested end to end on a real test account.</li>
+        <li>Closed two tickets as "no fault" with the restriction explained to the user rather than removed.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Governance &amp; Compliance Portfolio — open repository</span>
+        <span class="entry-when">2026</span>
+      </div>
+      <p class="entry-sub">Eight written projects across ISO 27001, PCI DSS, CIS Benchmarks and Active Directory identity governance</p>
+      <ul>
+        <li>Tier 0 privileged access scoping, continuous access evidence design (audit answerability for any date) and time-boxed hardening exceptions with owners and expiry.</li>
+        <li>Control-to-framework bridge mapping Active Directory controls to ISO 27001:2022, PCI DSS 4.0, CIS v8.1 and SOC 2, with stated limits.</li>
+        <li>Practical relevance to support work: leaver access removal SLAs, access review evidence, and why an over-privileged help desk account is a domain-level risk.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">[CompTIA A+ / Microsoft AZ-900 / MS-900 — whichever you actually hold or are studying]</span>
+        <span class="entry-when">[status + date]</span>
+      </div>
+      <p class="small muted">[In progress — exam booked for [date]. Delete this section entirely if you hold none; do not overstate.]</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">[Previous role] — [Employer]</span>
+        <span class="entry-when">[dates]</span>
+      </div>
+      <p class="entry-sub">[One line on what the business did]</p>
+      <ul>
+        <li>[A responsibility with a number in it — volume, team size, accuracy, turnaround.]</li>
+        <li>[One that maps to support: resolving queries, following process, explaining things to people, working under time pressure.]</li>
+        <li>[One that shows you are trusted: opening/closing, handling money or confidential data, training others, fixing a recurring problem.]</li>
+      </ul>
+    </div>
+    <p class="small muted">
+      Frame previous work in service language. Customer-facing, administrative, logistics or coordination roles all
+      contain ticket-handling, prioritisation and communication — name them explicitly rather than hoping the reader infers it.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">[Qualification] — [Institution]</span>
+        <span class="entry-when">[year]</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Additional</h2>
+    <p class="small muted">
+      References available on request · Own transport [if applicable] · Available [immediately / from date] ·
+      Languages: [English, isiZulu, …]
+    </p>
+  </section>
+
+</main>
+
+<div class="printbar noprint" style="margin-top:0;margin-bottom:32px">
+  <button onclick="window.print()">Print / save as PDF</button>
+</div>
+
+</body>
+</html>

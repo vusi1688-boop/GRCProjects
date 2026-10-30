@@ -13,6 +13,8 @@
   --dim: #64798c;
   --accent: #e6b455;
   --accent-soft: rgba(230, 180, 85, 0.12);
+  --blue: #8b9ce0;
+  --blue-soft: rgba(139, 156, 224, 0.12);
   --teal: #55b3aa;
   --teal-soft: rgba(85, 179, 170, 0.12);
   --danger: #d9857a;
@@ -34,6 +36,8 @@ html[data-theme="light"] {
   --dim: #7d8894;
   --accent: #9a6b14;
   --accent-soft: rgba(154, 107, 20, 0.10);
+  --blue: #45559f;
+  --blue-soft: rgba(69, 85, 159, 0.10);
   --teal: #1f7a72;
   --teal-soft: rgba(31, 122, 114, 0.10);
   --danger: #a4483c;
@@ -180,13 +184,16 @@ h1 {
   background: var(--accent); opacity: 0; transition: opacity .18s;
 }
 .card.track-identity::before { background: var(--teal); }
+.card.track-career::before { background: var(--blue); }
 .card:hover { border-color: color-mix(in srgb, var(--accent) 38%, var(--line)); }
 .card.track-identity:hover { border-color: color-mix(in srgb, var(--teal) 42%, var(--line)); }
+.card.track-career:hover { border-color: color-mix(in srgb, var(--blue) 42%, var(--line)); }
 .card:hover::before, .card.is-open::before { opacity: 1; }
 
 .card-top { display: flex; align-items: baseline; gap: .7rem; }
 .card-num { font-family: var(--mono); font-size: .82rem; color: var(--accent); }
 .card.track-identity .card-num { color: var(--teal); }
+.card.track-career .card-num { color: var(--blue); }
 .card-track { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); margin-left: auto; }
 
 .card h3 { font-size: 1.08rem; line-height: 1.32; margin: 0; letter-spacing: -.01em; font-weight: 620; }
@@ -207,6 +214,7 @@ h1 {
   display: inline-flex; align-items: center; gap: .4rem;
 }
 .card.track-identity .card-toggle { color: var(--teal); }
+.card.track-career .card-toggle { color: var(--blue); }
 .card-toggle::after { content: "→"; transition: transform .18s; }
 .card-toggle[aria-expanded="true"]::after { transform: rotate(90deg); }
 
@@ -221,6 +229,7 @@ h1 {
 .field ul { margin: 0; padding-left: 1.05rem; display: grid; gap: .2rem; }
 .field li::marker { color: var(--accent); }
 .card.track-identity .field li::marker { color: var(--teal); }
+.card.track-career .field li::marker { color: var(--blue); }
 
 .card-link { font-size: .82rem; font-family: var(--mono); color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--line); align-self: flex-start; }
 .card-link:hover { color: var(--text); border-bottom-color: var(--accent); }
