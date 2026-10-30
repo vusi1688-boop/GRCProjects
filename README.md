@@ -101,7 +101,7 @@ The practical track: turning a real home lab into evidence for a first-line supp
 
 ---
 
-Track C sits underneath the other two in a different way. It is where the identity knowledge becomes a daily job: resetting a password without breaking a delegation model, disabling an account properly, and knowing which requests you must escalate. See [`09-helpdesk-readiness/`](./09-helpdesk-readiness/) for the 30-day plan, the ticket diet and the CV pack, and [`10-career-strategy/`](./10-career-strategy/) for the CISO review, the twelve-month arc and the ordered lab roadmap.
+Track C sits underneath the other two in a different way. It is where the identity knowledge becomes a daily job: resetting a password without breaking a delegation model, disabling an account properly, and knowing which requests you must escalate. See [`09-helpdesk-readiness/`](./09-helpdesk-readiness/) for the 30-day plan, the ticket diet and the CV pack, and [`10-career-strategy/`](./10-career-strategy/) for the CISO review, the twelve-month arc, and the [`AD-WALKTHROUGH`](./10-career-strategy/AD-WALKTHROUGH.md) — eleven hand-held sessions from a fresh lab to an environment you can defend.
 
 ---
 

@@ -47,6 +47,20 @@
 - [ ] Gate 3: a decision I would reverse, explained in 5 minutes
 - [ ] Weekly log maintained, honestly
 
+## Lab walkthrough progress (10-career-strategy/AD-WALKTHROUGH.md)
+- [ ] S1 Health check, DNS, OU structure
+- [ ] S2 Privilege model + delegation proof
+- [ ] S3 LAPS
+- [ ] S4 Recycle Bin + backup + one real restore
+- [ ] S5 Account policy, lockout ticket, time sync
+- [ ] S6 DHCP
+- [ ] S7 File services rebuild + access matrix
+- [ ] S8 GPO discipline
+- [ ] S9 PowerShell toolkit with Pester tests
+- [ ] S10 Entra ID + M365 (tenant required)
+- [ ] S11 Twelve break/fix drills
+- [ ] Evidence pack complete: every claim maps to a file
+
 ## Session Log
 | Date | Project | What I Did | Next Step |
 |------|---------|------------|-----------|
@@ -54,3 +68,4 @@
 | 2026-10-30 | 06–08 + bridge | Added identity governance track (AD × GRC), bridge matrix, portfolio site | Complete Tier 0 register measurements |
 | 2026-10-30 | 09 Service Desk | Lab build reviewed as an audit; 14 findings with fixes, 16-ticket diet, CV + interview pack, 30-day plan, print-ready CV | Fix findings 1, 2, 4 and run the DNS test |
 | 2026-10-30 | 10 Career Strategy | CISO review of both profiles, 12-month arc with three gates, certification order, 16-build lab roadmap, weekly log | Positioning sentence, then lab builds 1–3 |
+| 2026-10-30 | 10 Walkthrough | Full 11-session AD walkthrough with expected output, failure branches and evidence naming; corrected the delegation steps to use the reset-password extended right plus lockoutTime write | Run Session 1 end to end |

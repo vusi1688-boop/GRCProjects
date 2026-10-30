@@ -2,6 +2,8 @@
 
 **Working material, not a portfolio project.** Do this in the lab, with a terminal open, in one sitting.
 
+> **This is the fast start.** For the full ordered sequence — health check, LAPS, backup and restore, DHCP, file services, GPO discipline, PowerShell, cloud — use [`AD-WALKTHROUGH.md`](./AD-WALKTHROUGH.md). Session 1 of that document contains everything here, plus the health checks that make the rest work.
+
 | | |
 |---|---|
 | **Time** | 90 minutes, including the evidence capture |
@@ -142,9 +144,16 @@ Now delegate. **Use the wizard** — it teaches the model, and the model is what
 1. On DC-01, open **Active Directory Users and Computers**
 2. Right-click **`OU=Users`** → **Delegate Control**
 3. Add **`HelpDesk_Group`**
-4. Choose **Create a custom task to delegate** → *Only the following objects in the folder* → tick **User objects**
-5. Permissions: tick **General** (read), **Property-specific** → tick *Read* and *Write* on **`pwdLastSet`** and **`lockoutTime`**
-6. Finish
+4. Choose **Delegate the following common tasks** → tick **Reset user passwords and force password change at next logon** and **Read all user information**
+5. **Next** → **Finish**
+
+Then grant unlock rights — a different permission type, and the one people forget:
+
+```powershell
+dsacls "OU=Users,DC=Vusi,DC=lab" /I:S /G "VUSI\HelpDesk_Group:WP;lockoutTime;user"
+```
+
+> **Why two steps:** password reset is an *extended right* (`User-Force-Change-Password`); unlock is a *property write* (`lockoutTime`). Writing `pwdLastSet` does **not** let anyone set a password — that is the mistake to avoid, and the reason to verify with a real reset rather than trusting the wizard.
 
 > **Scope discipline:** you delegated on `OU=Users`, not on the domain root. That is the difference between a help desk and a second Domain Admin. Never delegate at the domain root.
 
