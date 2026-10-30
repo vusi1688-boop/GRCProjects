@@ -8,6 +8,8 @@ One entry per week. Three fields, honestly answered. This is the file the mentor
 
 ## Week 1 · w/c 30 October 2026
 
+> Working from [`session-01-dns-and-privilege.md`](./session-01-dns-and-privilege.md). Do the session first, then fill this in — same day, not "at the weekend".
+
 **Did:**
 > *(What you actually ran, changed, fixed or broke. Include the DNS test result and whether findings 1, 2 and 4 are done.)*
 
