@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GRC &amp; Identity Governance Portfolio</title>
+<meta name="description" content="A working portfolio of governance, risk and compliance projects combined with Active Directory identity governance: boundary, evidence and honest debt." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">GRC <span class="dim">×</span> Identity</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#bridge">Bridge</a>
+      <a href="#skills">Skills</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#about">About</a>
+      <a href="./resume.html">CV</a>
+    </nav>
+    <button id="theme" class="theme" type="button" aria-label="Switch colour theme">◐</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="top" class="hero wrap">
+    <p class="kicker">Portfolio · 2026</p>
+    <h1>Compliance claims are only as good as the directory that records them.</h1>
+    <p class="lede">
+      Ten projects in three tracks. One builds defensible <strong>governance, risk and compliance</strong> decisions.
+      One builds the <strong>Active Directory identity evidence</strong> those decisions depend on. The third turns a
+      home lab into <strong>service desk evidence</strong>: an honest audit of what I built wrong, sixteen worked
+      tickets, and a route into a first-line support role.
+    </p>
+
+    <div class="hero-meta">
+      <div class="stat">
+        <span class="stat-n">10</span>
+        <span class="stat-l">projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">3</span>
+        <span class="stat-l">tracks</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">25</span>
+        <span class="stat-l">mapping rows</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">0</span>
+        <span class="stat-l">dashboards presented as evidence</span>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">Read the projects</a>
+      <a class="btn" id="repo-link-top" href="https://github.com/vusi1688-boop/GRCProjects" rel="noopener">View source on GitHub</a>
+    </div>
+
+    <blockquote class="pull">
+      “Mapping a control to six framework references proves intent, not effectiveness.
+      Effectiveness is a test record and a coverage number.”
+      <cite>The Identity-Governance Bridge</cite>
+    </blockquote>
+  </section>
+
+  <section id="projects" class="wrap section">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects by track">
+        <button class="chip is-active" type="button" data-track="all">All</button>
+        <button class="chip" type="button" data-track="grc">Track A · GRC</button>
+        <button class="chip" type="button" data-track="identity">Track B · Identity</button>
+        <button class="chip" type="button" data-track="career">Track C · Career</button>
+      </div>
+    </div>
+    <p class="section-note" id="filter-note">Projects 06–08 share one scenario (<em>Kopano Financial Services</em>); 09–10 are the career track, built from a real lab.</p>
+    <div id="project-grid" class="grid"></div>
+  </section>
+
+  <section id="bridge" class="wrap section">
+    <div class="section-head">
+      <h2>The bridge</h2>
+      <p class="section-sub">Where an Active Directory control becomes a compliance argument — and where the argument breaks.</p>
+    </div>
+    <div id="bridge-body" class="bridge"></div>
+  </section>
+
+  <section id="skills" class="wrap section">
+    <div class="section-head">
+      <h2>Skills, and the artefact that proves each one</h2>
+      <p class="section-sub">No competency is listed here without a deliverable behind it.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="matrix">
+        <thead>
+          <tr><th>Competency</th><th>Where it is demonstrated</th><th>Artefact an interviewer can inspect</th></tr>
+        </thead>
+        <tbody id="skills-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="evidence" class="wrap section">
+    <div class="section-head">
+      <h2>How the work is judged</h2>
+      <p class="section-sub">A project in this portfolio is only complete when it can survive these questions.</p>
+    </div>
+    <ol id="ladder" class="ladder"></ol>
+  </section>
+
+  <section id="about" class="wrap section">
+    <div class="about">
+      <div>
+        <h2>About this portfolio</h2>
+        <p>
+          These are exercises, not client engagements: each one starts from a realistic scenario, states its
+          constraints, and requires a decision that can be defended under challenge. Scenarios and organisations
+          are fictional. The measurements, framework references and failure modes are the ones that appear in
+          real audits.
+        </p>
+        <p>
+          Every project follows the same test: <strong>would this survive an auditor who assumes you built it to pass?</strong>
+          Where the answer is no, the limitation is written down rather than hidden.
+        </p>
+        <p class="muted">
+          Active Directory projects cover on-premises and hybrid identity only. Cloud-only privilege
+          (Entra roles, service principals, workload identities) is an acknowledged gap, listed in the bridge document
+          and a candidate for Project 10.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>Reading order</h3>
+        <ol class="reading">
+          <li><span>06</span> Draw the Tier 0 boundary</li>
+          <li><span>07</span> Prove it held, for any date</li>
+          <li><span>08</span> Own what is left, with expiry</li>
+          <li><span>09</span> Convert the lab into service desk evidence</li>
+          <li><span>10</span> Sequence the next twelve months</li>
+          <li><span>01–05</span> Apply the same judgment to GRC decisions</li>
+        </ol>
+        <p class="small">Short on time? Read <a href="#projects">06, 07 and 08</a> and the bridge matrix.<br />
+        Hiring for support? Start with <a href="./resume.html">the CV</a> and project 09.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>GRC × Identity Governance Portfolio · MIT licensed · scenarios fictional</p>
+    <p><a id="repo-link-foot" href="https://github.com/vusi1688-boop/GRCProjects" rel="noopener">Repository</a></p>
+  </div>
+</footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
